@@ -1,2 +1,2 @@
 # TuesdayThe13th
-ssu-caleido-team_tuesdaythe13th
+ssu-kaleido-team_tuesdaythe13th
