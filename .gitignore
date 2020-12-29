@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# LargeFile
+Assets/Fantastic City Generator/Textures/Atlas-1.psd

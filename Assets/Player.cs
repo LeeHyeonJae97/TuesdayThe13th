@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public JoyStick joyStick;
 
+    public const int detectRange = 3;
+
     private void Awake()
     {
         joyStick.move = Move;
@@ -14,6 +16,6 @@ public class Player : MonoBehaviour
     public void Move(Vector3 dir)
     {
         transform.forward = dir;
-        transform.Translate(dir * 3 * Time.deltaTime, Space.World);
+        transform.Translate(dir * 5 * Time.deltaTime, Space.World);
     }
 }
