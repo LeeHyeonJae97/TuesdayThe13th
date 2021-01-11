@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public JoyStick joyStick;
 
+    public Sprite dialogueImage;
+
     public const int detectRange = 3;
 
     private void Awake()

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Portalteleport : MonoBehaviour
-{ 
+{
     public Transform teleportTarget;
     public GameObject thePlayer;
 
@@ -25,5 +25,5 @@ public class Portalteleport : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         thePlayer.transform.position = teleportTarget.transform.position;
-    }    
+    }
 }

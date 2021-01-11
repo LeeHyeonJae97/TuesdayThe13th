@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// 조작 가능한 단서를 화면에 드래그를 함으로써 회전시킬 수 있다.
+/// </summary>
 public class StuffControlPanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public float minDrag;

@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Cinemachine;
 
-
+/// <summary>
+/// 카메라를 조작. 상하좌우로 드래그하여 조작할 수 있다.
+/// </summary>
 public class CameraControlPanel : MonoBehaviour, IDragHandler
 {
     public CinemachineFreeLook cmFreeLoock;

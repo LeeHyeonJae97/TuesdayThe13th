@@ -3,27 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 조작 가능한 단서
+/// </summary>
 public class StuffClue : Clue
 {
+    private Transform model;
+
+    // 단서를 조작하기 위해 바닥으로부터 위로 이격 시켜야하는데 이때 이격시킬 정도
     public float controlPosY;
 
     private Vector3 orgPos;
-    private Quaternion orgRot;
+    private Quaternion orgRot;   
 
+    // 단서의 원래 위치를 저장한다.
     private void Awake()
     {
-        orgPos = transform.position;
-        orgRot = transform.rotation;
+        model = transform.Find("Model");
+
+        orgPos = model.position;
+        orgRot = model.rotation;
     }
 
-    public override void Zoom(bool zoomIn, Transform clueCam, GameObject discoveryCanvas, Text clueNameText, Text descriptionText, GameObject stuffControlPanel)
+    // 단서에 줌 인하거나 단서로부터 줌 아웃
+    public override void Zoom(bool zoomIn, Transform clueCam, Text clueNameText, Text descriptionText, GameObject stuffControlPanel)
     {
-        clueCam.gameObject.SetActive(zoomIn);
-        discoveryCanvas.SetActive(zoomIn);
-
         if (zoomIn)
         {
-            transform.position = new Vector3(transform.position.x, controlPosY, transform.position.z);
+            model.position += new Vector3(0, controlPosY, 0);
+            //model.position = new Vector3(transform.position.x, controlPosY, transform.position.z);
 
             clueCam.position = camDummy.position;
             clueCam.rotation = camDummy.rotation;
@@ -31,12 +39,12 @@ public class StuffClue : Clue
             clueNameText.text = clueName;
             descriptionText.text = description;
             stuffControlPanel.SetActive(true);
-            stuffControlPanel.GetComponent<StuffControlPanel>().Target = transform;
+            stuffControlPanel.GetComponent<StuffControlPanel>().Target = model;
         }
         else
         {
-            transform.position = orgPos;
-            transform.rotation = orgRot;
+            model.position = orgPos;
+            model.rotation = orgRot;
         }
     }
 }
