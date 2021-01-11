@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// 조이스틱, 플레이어를 움직인다. 카메라의 위치에 따라 움직임이 달라진다.
+/// </summary>
 public class JoyStick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public delegate void Move(Vector3 dir);
