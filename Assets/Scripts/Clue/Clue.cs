@@ -11,3 +11,5 @@ public abstract class Clue : MonoBehaviour
 
     public abstract void Zoom(bool zoomIn, Transform clueCam, GameObject discoveryCanvas, Text clueNameText, Text descriptionText, GameObject stuffControlPanel);
 }
+
+
