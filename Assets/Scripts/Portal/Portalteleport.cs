@@ -1,29 +1,77 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
+/*
 public class Portalteleport : MonoBehaviour
 {
-    public Transform teleportTarget;
-    public GameObject thePlayer;
+    public Door[] doors;
+    private Door detected;
 
-    Collider m_objectCollider;
-    public void Triggeron()
+    /*
+    public Text clueName;
+    public Text description;
+    public GameObject stuffControlPanel;
+
+    
+    public GameObject mainCam;
+    public Transform clueCam;
+    
+    
+    */
+/*
+    public Transform player;
+    public GameObject controllerCanvas;
+    public Button teleportButton;
+
+    private void Update()
     {
-        m_objectCollider = GetComponent<Collider>();
-        m_objectCollider.isTrigger = true;
+        int index = -1;
+        float minDist = 999999;
+
+        for (int i = 0; i < doors.Length; i++)
+        {
+            float dist = (player.position - doors[i].transform.position).sqrMagnitude;
+            if (dist < Player.detectRange * Player.detectRange && dist < minDist)
+            {
+                index = i;
+                minDist = dist;
+            }
+        }
+        if (index >= 0) Detected(doors[index]);
+        else Detected(null);
     }
 
-    public void Triggeroff()
+    public void Detected(Door door)
     {
-        m_objectCollider = GetComponent<Collider>();
-        m_objectCollider.isTrigger = false;
+        if (door == null && detected != null)
+        {
+            Debug.Log("Nothing");
+
+            detected = null;
+            teleportButton.interactable = false;
+        }
+
+        else if (door != null && detected != door)
+        {
+            Debug.Log("Detect");
+
+            detected = door;
+            teleportButton.interactable = true;
+        }
     }
 
-    private void OnTriggerStay(Collider other)
+    public void teleport_button(bool value)
     {
-        thePlayer.transform.position = teleportTarget.transform.position;
+
+        if (value && detected != null)
+        {
+            controllerCanvas.SetActive(false);
+        }
+        else
+        {
+            controllerCanvas.SetActive(true);
+        }
     }
 }
+*/
