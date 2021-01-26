@@ -63,6 +63,7 @@ public class Portalteleport : MonoBehaviour
 
     public void teleport_button(bool value)
     {
+
         if (value && detected != null)
         {
             controllerCanvas.SetActive(false);
