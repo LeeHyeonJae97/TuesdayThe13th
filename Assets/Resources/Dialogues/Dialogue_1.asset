@@ -9,25 +9,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cedfb104277a0b4392d9c8b8fc9cbe2, type: 3}
+  m_Script: {fileID: 11500000, guid: c48aa2489d7e4ff408a047f9a177989d, type: 3}
   m_Name: Dialogue_1
   m_EditorClassIdentifier: 
   dialogueName: Dialogue_1
-  repeatable: 0
-  readMain: 0
-  mainSpeaks:
-  - speaker: Lee
-    image: {fileID: 0}
-    content: "\uC548\uB155. Kim \uB9DE\uC9C0?"
-  - speaker: Kim
-    image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    content: "\uC5B4 \uADF8\uB798 \uC548\uB155 \uC624\uB79C\uB9CC\uC774\uB2E4."
-  - speaker: Lee
-    image: {fileID: 0}
-    content: "\uADF8 \uB3D9\uC548 \uBB50\uD558\uACE0 \uC9C0\uB0C8\uC5B4?"
-  - speaker: Kim
-    image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    content: "\uB098\uB294 OO\uD68C\uC0AC\uC5D0 \uCDE8\uC9C1\uD574\uC11C \uC77C\uD558\uACE0
-      \uC788\uC5B4. \uB108\uB294?"
-  subSpeaks: []
+  curIndex: 4
+  speaks:
+  - name: A
+    portrait: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    content: "\uC548\uB155 \uC624\uB79C\uB9CC\uC774\uB2E4 B\uC57C"
+  - name: B
+    portrait: {fileID: 0}
+    content: "\uADF8\uB798 \uC624\uB79C\uB9CC\uC774\uB2E4 A\uC57C. \uC798 \uC9C0\uB0C8\uB2C8"
+  - name: A
+    portrait: {fileID: 0}
+    content: "\uC751. \uB09C \uC798 \uC9C0\uB0C8\uC5B4. \uB108\uB294 \uBB50\uD558\uACE0
+      \uC9C0\uB0B4?"
+  - name: B
+    portrait: {fileID: 0}
+    content: "\uB09C \uC9C0\uAE08 OOO\uD68C\uC0AC\uC5D0\uC11C \uC77C\uD558\uACE0
+      \uC788\uC5B4 \uB108\uB294?"
   option: {fileID: 11400000, guid: d5b493e002d4fbe458ac14854fea533a, type: 2}

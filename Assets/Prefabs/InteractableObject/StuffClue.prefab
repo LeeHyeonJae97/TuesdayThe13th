@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1701105e299ad9498bb6d829edb6667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableButtonColor: {r: 0.2783019, g: 1, b: 0.4717281, a: 1}
-  interactableButton: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  clueName: 
-  description: 
+  interactButtonColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
+  interactButton: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  dialogue: {fileID: 0}
   camDummy: {fileID: 1511357390282547126}
+  model: {fileID: 0}
   controlPosY: 0
 --- !u!1 &8857208194851539732
 GameObject:

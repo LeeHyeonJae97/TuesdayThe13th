@@ -18,6 +18,6 @@ public class InteractNpc : MonoBehaviour
     // DialogueManager에서 다이얼로그를 불러와 대화를 시작한다.
     public void Talk(GameObject npc)
     {
-        dialogueManager.LoadDialogue(npc.GetComponent<Npc>().DialogueName);
+        dialogueManager.LoadDialogue(npc.GetComponent<Npc>().Dialogue);
     }
 }

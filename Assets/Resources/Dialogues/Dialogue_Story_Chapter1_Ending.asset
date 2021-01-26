@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a78c451459f2314dbb9c70a856863ea, type: 3}
+  m_Name: Dialogue_Story_Chapter1_Ending
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue_Story_Chapter1_Ending
+  curIndex: 0
+  speaks:
+  - bkg: {fileID: 21300000, guid: dfc48b1993cf6e2488e0f21c4faf3145, type: 3}
+    content: "A\uB97C \uC8FD\uC778 \uBC94\uC778\uC740 B\uC600\uB2E4."
+  - bkg: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    content: "A\uC640 B\uB294 \uC5B4\uB838\uC744 \uC801\uBD80\uD130 \uC54C\uACE0
+      \uC9C0\uB0C8\uC9C0\uB9CC \uC0AC\uC2E4 B\uB294 A\uB97C \uC2DC\uAE30\uD558\uACE0
+      \uC788\uC5C8\uB530"
+  - bkg: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    content: "\uACB0\uC815\uC801\uC73C\uB85C ... \uC774\uC720\uB85C B\uB294 A\uB97C
+      \uC8FD\uC774\uAC8C \uB41C\uB2E4."

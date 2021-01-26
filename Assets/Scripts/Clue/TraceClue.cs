@@ -9,15 +9,15 @@ using UnityEngine.UI;
 public class TraceClue : Clue
 {
     // 단서에 줌인
-    public override void Zoom(bool zoomIn, Transform clueCam, Text clueNameText, Text descriptionText, GameObject stuffControlPanel)
+    public override void Zoom(bool zoomIn, DialogueManager dialogueManager, Transform clueCam, GameObject stuffControlPanel)
     {
         if (zoomIn)
         {
+            dialogueManager.LoadDialogue(dialogue);
+
             clueCam.position = camDummy.position;
             clueCam.rotation = camDummy.rotation;
 
-            clueNameText.text = clueName;
-            descriptionText.text = description;
             stuffControlPanel.SetActive(false);            
         }
     }

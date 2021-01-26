@@ -9,7 +9,7 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "BranchOption", menuName = "ScriptableObject/BranchOption")]
 public class BranchOption : Option
 {
-    public string[] dialogues;
+    public Dialogue[] dialogues;
 
     public override void Init(DialogueManager dialogueManager)
     {

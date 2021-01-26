@@ -9,6 +9,6 @@ public class Npc : InteractableObject
     public string NpcName { get { return npcName; } }
 
     // NPC와의 대화 이름
-    [SerializeField] private string dialogueName;
-    public string DialogueName { get { return dialogueName; } }  
+    [SerializeField] private Dialogue dialogue;
+    public Dialogue Dialogue { get { return dialogue; } }  
 }

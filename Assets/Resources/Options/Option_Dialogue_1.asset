@@ -16,5 +16,5 @@ MonoBehaviour:
   - "\uB098\uB294 \uC9C0\uAE08 \uBC31\uC218\uC57C"
   - "\uB098\uB294 \uC9C0\uAE08 \uD0D0\uC815\uC73C\uB85C \uC77C\uD558\uACE0 \uC788\uC5B4."
   dialogues:
-  - Dialogue_1_1
-  - Dialogue_1_2
+  - {fileID: 11400000, guid: f3446ca684ff8f6449ab109f67b8c443, type: 2}
+  - {fileID: 11400000, guid: 3a13a641bd2ca804197c304761d8c931, type: 2}

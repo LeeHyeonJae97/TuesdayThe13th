@@ -9,22 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cedfb104277a0b4392d9c8b8fc9cbe2, type: 3}
+  m_Script: {fileID: 11500000, guid: c48aa2489d7e4ff408a047f9a177989d, type: 3}
   m_Name: Dialogue_1_2
   m_EditorClassIdentifier: 
   dialogueName: Dialogue_1_2
-  repeatable: 0
-  readMain: 0
-  mainSpeaks:
-  - speaker: Kim
-    image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    content: "\uC640 \uC815\uB9D0? \uC5B4\uB838\uC744 \uB54C \uBD80\uD130 \uD0D0\uC815\uC774
-      \uAFC8\uC774\uB77C\uB354\uB2C8 \uBA4B\uC788\uB2E4!"
-  - speaker: Lee
-    image: {fileID: 0}
-    content: "\uACE0\uB9C8\uC6CC \uADF8\uB7FC \uB09C \uBC14\uBE60\uC11C \uC774\uB9CC"
-  - speaker: Kim
-    image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-    content: "\uADF8\uB798 \uC548\uB155"
-  subSpeaks: []
+  curIndex: 0
+  speaks:
+  - name: "\uC774\uC528"
+    protrait: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    content: "\uC815\uB9D0 \uCD95\uD558\uD55C\uB2E4."
   option: {fileID: 0}

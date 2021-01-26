@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public abstract class Clue : InteractableObject
 {
-    public string clueName;
-    public string description;
+    public Dialogue dialogue;    
     public Transform camDummy; //** position과 rotation으로 분리
 
-    public abstract void Zoom(bool zoomIn, Transform clueCam, Text clueNameText,
-        Text descriptionText, GameObject stuffControlPanel);
+    public abstract void Zoom(bool zoomIn, DialogueManager dialogueManager, Transform clueCam, GameObject stuffControlPanel);
 }

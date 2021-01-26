@@ -8,9 +8,9 @@ using UnityEngine;
 public abstract class InteractableObject : MonoBehaviour
 {
     //**
-    public Color interactableButtonColor;
+    public Color interactButtonColor;
 
-    public Sprite interactableButton;
+    public Sprite interactButton;
 
     public delegate void InteractCallBack(GameObject go);
     public InteractCallBack onInteract;

@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b43889ff0849174f8a84fe46afe0a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableButtonColor: {r: 1, g: 0.3443396, b: 0.3443396, a: 1}
-  interactableButton: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  interactButtonColor: {r: 1, g: 0.4849228, b: 0.43867922, a: 1}
+  interactButton: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   npcName: 
-  dialogueName: 
+  dialogue: {fileID: 0}

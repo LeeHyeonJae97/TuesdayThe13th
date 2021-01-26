@@ -406,8 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableButtonColor: {r: 0, g: 0, b: 0, a: 0}
   interactableButton: {fileID: 0}
-  clueName: "\uD654\uB2E8"
-  description: "\uBC1C\uC790\uAD6D\uC774 \uBCF4\uC774\uB294 \uAC83 \uAC19\uB2E4."
+  dialogue: {fileID: 0}
   camDummy: {fileID: 5557357469081299073}
 --- !u!1 &5557357469081299074
 GameObject:
@@ -819,6 +818,12 @@ PrefabInstance:
       propertyPath: description
       value: "\uBB34\uC5B8\uAC00\uAC00 \uC788\uB2E4."
       objectReference: {fileID: 0}
+    - target: {fileID: 5086422426427023798, guid: f664b3ec59a4f274ab3172159807f4db,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: f8b10b8ca1ca60844a7225c42f1633e1,
+        type: 2}
     - target: {fileID: 6529050513045900248, guid: f664b3ec59a4f274ab3172159807f4db,
         type: 3}
       propertyPath: m_LocalRotation.y
@@ -1556,6 +1561,17 @@ PrefabInstance:
       propertyPath: controlPosY
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1222089628285603776, guid: 8eac351a5f7c1e9409da1bbc89199428,
+        type: 3}
+      propertyPath: model
+      value: 
+      objectReference: {fileID: 1634049442591217415}
+    - target: {fileID: 1222089628285603776, guid: 8eac351a5f7c1e9409da1bbc89199428,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: f8b10b8ca1ca60844a7225c42f1633e1,
+        type: 2}
     - target: {fileID: 1511357390282547126, guid: 8eac351a5f7c1e9409da1bbc89199428,
         type: 3}
       propertyPath: m_LocalRotation.y

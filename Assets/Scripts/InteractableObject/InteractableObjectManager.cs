@@ -71,7 +71,7 @@ public class InteractableObjectManager : MonoBehaviour
             this.target = target;
 
             //**
-            interactButton.GetComponent<Image>().color = target.interactableButtonColor;
+            interactButton.GetComponent<Image>().color = target.interactButtonColor;
 
             interactButton.interactable = true;
 
@@ -104,7 +104,6 @@ public class InteractableObjectManager : MonoBehaviour
 
             for (int i = 0; i < npcs.Length; i++)
             {
-                Debug.Log(npcs[i]);
                 npcs[i].GetComponent<InteractableObject>().Init(interactNpc.Talk);
             }
         }

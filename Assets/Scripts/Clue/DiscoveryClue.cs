@@ -10,8 +10,6 @@ using UnityEngine.UI;
 public class DiscoveryClue : MonoBehaviour
 {
     public GameObject discoveryCanvas;
-    public Text clueName;
-    public Text description;
     public GameObject stuffControlPanel;
 
     public Transform player;
@@ -19,6 +17,8 @@ public class DiscoveryClue : MonoBehaviour
     public Transform clueCam;
     public GameObject controllerCanvas;
     public Button interactButton;
+
+    public DialogueManager dialogueManager;
 
     private GameObject clue;
 
@@ -35,7 +35,7 @@ public class DiscoveryClue : MonoBehaviour
         if (clue != null)
         {
             // 단서에 줌인
-            clue.GetComponent<Clue>().Zoom(true, clueCam, clueName, description, stuffControlPanel);
+            clue.GetComponent<Clue>().Zoom(true, dialogueManager, clueCam, stuffControlPanel);
 
             // 카메라와 화면 UI 조정
             clueCam.gameObject.SetActive(true);
@@ -54,7 +54,7 @@ public class DiscoveryClue : MonoBehaviour
         if(clue != null)
         {
             // 단서로부터 줌 아웃
-            clue.GetComponent<Clue>().Zoom(false, clueCam, clueName, description, stuffControlPanel);
+            clue.GetComponent<Clue>().Zoom(false, dialogueManager, clueCam, stuffControlPanel);
 
             // 카메라와 화면 UI 조정
             clueCam.gameObject.SetActive(false);
